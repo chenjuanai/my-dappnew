@@ -1,0 +1,116 @@
+/* 应用全局样式 */
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* 背景样式 */
+  .background-dollar {
+    background-image: url('path-to-your-dollar-background.jpg'); /* 替换为美元背景图片的路径 */
+    background-size: cover;
+    position: fixed; /* 使背景固定，不随内容滚动 */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 确保背景在内容下方 */
+  }
+  
+  /* 钱包连接按钮样式 */
+  .WalletConnectButton {
+    background-color: #4CAF50; /* 提供一个明显的按钮颜色 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* 按钮距离顶部的距离 */
+    transition: background-color 0.3s ease;
+  }
+  
+  .WalletConnectButton:hover {
+    background-color: #45a049; /* 鼠标悬停时按钮的颜色 */
+  }
+  
+  /* 签名模态框样式 */
+  .SignatureModal {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 33%; /* 占屏幕宽度的三分之一 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 确保居中 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    z-index: 10; /* 确保模态框在最上方 */
+  }
+  
+  /* 签名内容方框样式 */
+  .SignatureContent {
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* 与其他内容的距离 */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* 导航栏样式 */
+  .NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .NavBar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  
+  .NavBar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 页脚样式 */
+  .Footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* DApp功能的额外按钮样式 */
+  .ButtonSecondary {
+    background-color: #008CBA; /* 为次要动作提供不同的按钮颜色 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ButtonSecondary:hover {
+    background-color: #007ba7;
+  }
+  
+  /* 响应式设计调整 */
+  @media (max-width: 768px) {
+    .SignatureModal {
+      width: 90%; /* 在较小的屏幕上使模态框更宽 */
+    }
+  
+    .NavBar, .Footer {
+      flex-direction: column;
+    }
+  }
+  
