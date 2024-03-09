@@ -5,6 +5,7 @@
     "node": "16.x"
   },
   "dependencies": {
+    "ethers": "^6.11.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-scripts": "3.4.4",
