@@ -2,7 +2,7 @@
   "name": "my-dapp",
   "version": "1.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "20.x"
   },
   "dependencies": {
     "ethers": "^6.11.1",
