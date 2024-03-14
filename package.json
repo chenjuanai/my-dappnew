@@ -2,15 +2,15 @@
   "name": "my-dapp",
   "version": "1.0.0",
   "engines": {
-    "node": "18.x"
+    "node": "21.5.0.x"
   },
   "dependencies": {
     "ethers": "^6.11.1",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-scripts": "3.4.4",
-    "uuid": "7.0.3",
-    "web3": "4.5.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1",
+    "uuid": "9.0.1",
+    "web3": "4.6.0",
     "web3modal": "1.9.4"
   },
   "scripts": {
