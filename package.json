@@ -2,7 +2,7 @@
   "name": "my-dapp",
   "version": "1.0.0",
   "engines": {
-    "node": "21.2.0"
+    "node": "18.x"
   },
   "dependencies": {
     "@babel/plugin-transform-class-properties": "^7.23.3",
