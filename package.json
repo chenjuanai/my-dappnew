@@ -13,7 +13,7 @@
     "react-scripts": "^5.0.1",
     "uuid": "9.0.1",
     "web3": "4.6.0",
-    "web3modal": "4.0.13"
+    "web3modal": "4.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
