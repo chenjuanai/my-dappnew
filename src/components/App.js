@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Web3Modal from '../utis/web3modal';
+import Web3Modal from 'web3modal/wallet';
 import WalletConnectProvider from '@walletconnect/web3-provider';
 import { ethers } from 'ethers';
 import WalletConnectButton from './WalletConnectButton';
