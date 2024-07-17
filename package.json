@@ -1,41 +1,35 @@
 {
+  "type": "module",
   "name": "my-dapp",
   "version": "1.0.0",
-  "engines": {
-    "node": ">=12.0.0"
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "dependencies": {
-    "@babel/plugin-transform-class-properties": "^7.24.1",
-    "@ethersproject/providers": "^5.7.2",
-    "@walletconnect/web3-provider": "^1.8.0",
-    "@web3modal/wallet": "^5.0.6",
-    "ethers": "^6.13.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "uuid": "^9.0.1",
-    "web3": "^4.10.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/node": "^20.14.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "typescript": "^4.9.5"
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "assert": "^2.0.0",
+    "babel-loader": "^8.2.2",
+    "buffer": "^6.0.3",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "style-loader": "^3.0.0",
+    "url": "^0.11.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }

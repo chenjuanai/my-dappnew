@@ -1,3 +1,6 @@
+
+/* src/components/App.css */
+
 /* 应用全局样式 */
 .App {
   text-align: center;
@@ -6,7 +9,7 @@
 
 /* 背景样式 */
 .background-dollar {
-  background-image: url('path-to-your-dollar-background.jpg'); /* 替换为美元背景图片的路径 */
+  background-image: url('../assets/images/dollar-background-desktop.jpg'); /* 默认桌面背景图片 */
   background-size: cover;
   position: fixed;
   width: 100%;
@@ -14,6 +17,12 @@
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .background-dollar {
+    background-image: url('../assets/images/dollar-background-mobile.jpg'); /* 移动端背景图片 */
+  }
 }
 
 /* 钱包连接按钮样式 */
