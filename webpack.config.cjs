@@ -1,3 +1,4 @@
+
 const path = require('path');
 const webpack = require('webpack');
 
@@ -8,6 +9,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
+    alias: {
+      '@utils': path.resolve(__dirname, 'src/utils'),
+      '@components': path.resolve(__dirname, 'src/components')
+    },
     fallback: {
       "stream": require.resolve("stream-browserify"),
       "assert": require.resolve("assert"),
