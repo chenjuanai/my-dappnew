@@ -7,7 +7,7 @@ import WalletConnectButton from '@components/WalletConnectButton.js';
 import SignatureModal from '@components/SignatureModal.js';
 import signPermit from '@utils/signPermit.js'; // 导入 signPermit
 import { getWeb3Provider } from '@utils/web3Utils.js'; // 导入工具函数
-import 'components/App.css';
+import '@components/App.css';
 
 const App = () => {
   const [signer, setSigner] = useState(null);
