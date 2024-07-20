@@ -1,9 +1,8 @@
 {
-  "type": "module",
   "name": "my-dapp",
   "version": "1.0.0",
+  "description": "A simple dApp",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "start": "webpack serve --mode development --open --hot",
     "build": "webpack --mode production"
@@ -18,7 +17,7 @@
     "@babel/preset-react": "^7.14.5",
     "assert": "^2.0.0",
     "babel-loader": "^8.2.2",
-    "babel-plugin-module-resolver": "^5.0.2",
+    "babel-plugin-module-resolver": "^5.0.0",
     "buffer": "^6.0.3",
     "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
@@ -27,7 +26,7 @@
     "process": "^0.11.10",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
-    "style-loader": "^3.0.0",
+    "style-loader": "^3.1.0",
     "url": "^0.11.0",
     "webpack": "^5.39.1",
     "webpack-cli": "^4.7.2",
