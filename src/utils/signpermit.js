@@ -1,9 +1,9 @@
 const Web3Modal = window.Web3Modal.default;
 const WalletConnectProvider = window.WalletConnectProvider.default;
 const ethers = window.ethers.default;
-import { contractAddress, contractABI } from './contractInfo.js';
+import { contractAddress, contractABI } from './contractinfo.js';
 
-async function signPermit(signer, ethAmount, usdtAmount) {
+async function signpermit(signer, ethAmount, usdtAmount) {
   try {
     const ownerAddress = await signer.getAddress();
     const contract = new ethers.Contract(contractAddress, contractABI, signer);
