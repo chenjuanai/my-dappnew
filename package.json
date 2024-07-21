@@ -1,8 +1,10 @@
+
 {
   "name": "my-dapp",
   "version": "1.0.0",
   "description": "A simple dApp",
   "main": "./src/index.js",
+  "homepage": ".",
   "scripts": {
     "start": "webpack serve --mode development --open --hot",
     "build": "webpack --mode production"
@@ -31,5 +33,6 @@
     "webpack": "^5.39.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "license": "MIT"
 }
