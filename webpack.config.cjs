@@ -1,17 +1,17 @@
-
 const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+  mode: 'development', // 或 'production'，根据需要选择
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   resolve: {
     alias: {
       '@utils': path.resolve(__dirname, 'src/utils'),
-      '@components': path.resolve(__dirname, 'src/components')
+      '@components': path.resolve(__dirname, 'src/components'),
     },
     fallback: {
       "stream": require.resolve("stream-browserify"),
@@ -19,13 +19,13 @@ module.exports = {
       "http": require.resolve("stream-http"),
       "https": require.resolve("https-browserify"),
       "os": require.resolve("os-browserify/browser"),
-      "url": require.resolve("url")
+      "url": require.resolve("url"),
     }
   },
   plugins: [
     new webpack.ProvidePlugin({
       process: 'process/browser',
-      Buffer: ['buffer', 'Buffer']
+      Buffer: ['buffer', 'Buffer'],
     })
   ],
   module: {
