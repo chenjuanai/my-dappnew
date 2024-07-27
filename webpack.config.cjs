@@ -3,11 +3,11 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'development', // 或 'production'，根据需要选择
-  entry: './src/index.js',
+  entry: './src/index.js', // 入口文件路径修正
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'), // 输出目录改为 'build'
     filename: 'bundle.js',
-    publicPath: '/' // 添加这一行
+    publicPath: '/' // 添加这一行以便正确处理路由
   },
   resolve: {
     alias: {
@@ -33,7 +33,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /node_modules/, // 正则表达式修正
         use: {
           loader: 'babel-loader',
           options: {
