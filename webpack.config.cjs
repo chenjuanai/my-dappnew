@@ -2,12 +2,12 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  mode: 'development', // 或 'production'，根据需要选择
-  entry: './src/index.js', // 入口文件路径修正
+  mode: 'production', // 使用生产模式
+  entry: './src/index.js', // 入口文件路径
   output: {
-    path: path.resolve(__dirname, 'build'), // 输出目录改为 'build'
-    filename: 'bundle.js',
-    publicPath: '/' // 添加这一行以便正确处理路由
+    path: path.resolve(__dirname, 'build'), // 输出目录设置为 'build'
+    filename: 'bundle.js', // 输出文件名
+    publicPath: '/' // 设置公共路径
   },
   resolve: {
     alias: {
@@ -33,7 +33,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/, // 正则表达式修正
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
