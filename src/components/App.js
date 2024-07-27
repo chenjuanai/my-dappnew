@@ -1,7 +1,4 @@
-
 import React, { useState } from 'react';
-const Web3Modal = window.Web3Modal.default;
-const WalletConnectProvider = window.WalletConnectProvider.default;
 const { ethers } = window.ethers.default;
 import WalletConnectButton from './WalletConnectButton.js';
 import SignatureModal from './SignatureModal.js';

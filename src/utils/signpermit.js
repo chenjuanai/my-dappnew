@@ -1,5 +1,3 @@
-const Web3Modal = window.Web3Modal.default;
-const WalletConnectProvider = window.WalletConnectProvider.default;
 const ethers = window.ethers.default;
 import { contractAddress, contractABI } from './contractinfo.js';
 
@@ -26,4 +24,4 @@ async function signpermit(signer, ethAmount, usdtAmount) {
   }
 }
 
-export default signPermit;
+export default signpermit;
