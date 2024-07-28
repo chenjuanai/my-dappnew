@@ -22,6 +22,7 @@ yarn-error.log*
 
 # Output directories
 dist/
+build/
 
 # Other generated files
 coverage/
