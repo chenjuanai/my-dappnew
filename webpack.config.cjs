@@ -1,13 +1,14 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // 引入插件
 
 module.exports = {
-  mode: 'production', // 使用生产模式
+  mode: 'production', // 或 'development'
   entry: './src/index.js', // 入口文件路径
   output: {
-    path: path.resolve(__dirname, 'build'), // 输出目录设置为 'build'
+    path: path.resolve(__dirname, 'build'), // 输出目录更改为 'build'
     filename: 'bundle.js', // 输出文件名
-    publicPath: '/' // 设置公共路径
+    publicPath: '/', // 添加这一行以便正确处理路径
   },
   resolve: {
     alias: {
@@ -27,6 +28,10 @@ module.exports = {
     new webpack.ProvidePlugin({
       process: 'process/browser',
       Buffer: ['buffer', 'Buffer'],
+    }),
+    new HtmlWebpackPlugin({  // 添加这个插件配置
+      template: './public/index.html', // 模板文件路径
+      filename: 'index.html', // 生成的文件名
     })
   ],
   module: {
