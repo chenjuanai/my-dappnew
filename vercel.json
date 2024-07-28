@@ -1,11 +1,20 @@
 {
-  "buildCommand": "yarn build",
-  "installCommand": "yarn install",
-  "outputDirectory": "build",
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/build/$1"
     }
-  ]
+  ],
+  "buildCommand": "yarn build",
+  "installCommand": "yarn install",
+  "outputDirectory": "build"
 }
