@@ -1,11 +1,11 @@
 {
+  "buildCommand": "yarn build",
+  "installCommand": "yarn install",
+  "outputDirectory": "build",
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/build/$1"
     }
-  ],
-  "buildCommand": "yarn build",
-  "installCommand": "yarn install",
-  "outputDirectory": "build"
+  ]
 }
